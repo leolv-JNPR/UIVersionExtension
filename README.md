@@ -1,6 +1,7 @@
 # Mist admin-ui version
 
 This is a simple Chrome extension.
+![extension](image.png)
 
 ## How to Load the Extension in Chrome
 
