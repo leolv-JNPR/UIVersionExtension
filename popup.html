@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Chrome Extension</title>
+  <script src="popup.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 10px;
+      min-width: 350px; /* Increased min-width for a wider popup */
+      /* text-align: center; Removed as grid handles alignment */
+    }
+    #content {
+      display: flex;
+      flex-direction: column;
+      gap: 5px; /* Space between each version entry */
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr auto; /* Text takes available space, button fits content */
+      gap: 10px; /* Space between version info and button */
+      align-items: center; /* Vertically center items in the grid row */
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      transition: background-color 0.2s ease-in-out; /* Smooth transition for hover */
+    }
+    .container:hover {
+      background-color: #e0f2f7; /* Light blue background color on hover */
+    }
+    .version-info-wrapper {
+      display: flex;
+      flex-direction: column; /* Stack label and version vertically */
+      text-align: left;
+    }
+    .version-label {
+      font-size: 14px;
+      font-weight: bold; /* Make label bold */
+      margin-bottom: 2px; /* Add a small space below the label */
+    }
+    .version-number {
+      font-size: 13px;
+    }
+    .hotfix-version {
+      color: orange;
+    }
+    button {
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #f0f0f0;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e0e0e0;
+    }
+    .error-text {
+      color: red;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div id="content"></div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"command": "echo \"To run the extension, load it in Chrome as an unpacked extension. Go to chrome://extensions, enable Developer mode, and click 'Load unpacked'.\"",
+			"label": "Run Chrome Extension",
+			"type": "shell"
+		}
+	]
+}

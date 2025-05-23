@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Mist admin-ui version",
+  "version": "1.0",
+  "description": "A simple Chrome extension.",
+  "icons": {
+    "16": "favicon.png",
+    "32": "favicon.png",
+    "48": "favicon.png",
+    "128": "favicon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "https://integration.mistsys.com/",
+    "https://manage-staging.mistsys.com/",
+    "https://integration.gc1.mistsys.com/",
+    "https://manage-staging.gc1.mistsys.com/"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
